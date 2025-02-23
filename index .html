@@ -30,7 +30,7 @@
 <body class="font-[DM Sans] w-[1440px] mx-auto bg-slate-900">
 
     <!------------ Navbar Section ------------>
-    <section class="flex justify-between items-center py-6 px-10">
+    <section class="flex items-center justify-between px-10 py-6">
         <!-- Logo -->
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="91" height="30" viewBox="0 0 91 30" fill="none">
@@ -110,13 +110,14 @@
     </section>
 
     <!--------------- Banner Section -------------->
-    <section class="flex">
+    <section class="relative flex banner">
+
 
         <!-- Text -->
         <div>
 
             <h1 class="text-white text-6xl font-bold mt-[156px]">
-                Transform <span class="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Your Brand</span> <br> with Expert Design & <br> Marketing
+                Transform <span class="text-transparent bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text">Your Brand</span> <br> with Expert Design & <br> Marketing
             </h1>
 
             <h3 class="text-[#F6F6F6] mt-8 mb-8 text-lg font bold">At our agency, we create custom digital marketing strategies and <br> stunning designs to boost your brand and connect with your <br> audience. Let us help you achieve your goals.</h3>
@@ -129,7 +130,7 @@
                 <div class="flex gap-1 mt-[224px] items-center">
 
 
-                    <svg class="h-6 w-6 text-white" fill="white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="" x="0px" y="0px" viewBox="0 0 79.37 122.88" style="enable-background:new 0 0 79.37 122.88" xml:space="preserve">
+                    <svg class="w-6 h-6 text-white" fill="white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="" x="0px" y="0px" viewBox="0 0 79.37 122.88" style="enable-background:new 0 0 79.37 122.88" xml:space="preserve">
                             <g>
                                 <path d="M50.2,1.25c6.71,1.85,12.72,5.44,17.51,10.23c7.19,7.19,11.65,17.11,11.65,28.03V83.2c0,10.92-4.46,20.84-11.65,28.03 
                                     c-7.19,7.19-17.11,11.65-28.03,11.65c-10.92,0-20.84-4.46-28.03-11.65C4.46,104.04,0,94.11,0,83.2V39.51 
@@ -149,8 +150,74 @@
 
         </div>
 
+        <!-- Svg -->
+        <div class="absolute left-76 top-54">
+            <svg xmlns="http://www.w3.org/2000/svg" width="292" height="9" viewBox="0 0 292 9" fill="none">
+                <path d="M196.105 2.33903C196.215 2.52099 196.125 2.67494 195.816 2.70759C195.042 2.78924 194.261 2.86388 193.475 2.88021C191.767 2.91287 190.056 2.90588 188.485 2.91521C188.066 3.09949 188.113 3.21846 188.5 3.26278C188.887 3.30711 189.286 3.31643 189.68 3.31643C204.347 3.34676 219.017 3.36542 233.684 3.40975C235.263 3.41441 236.842 3.53339 238.413 3.64769C240.257 3.78065 242.09 3.85297 243.938 3.65002C244.712 3.56605 245.521 3.47506 246.295 3.51938C253.278 3.92061 260.278 3.83664 267.273 3.8483C268.05 3.85063 268.828 3.94393 269.602 4.01158C269.66 4.01624 269.735 4.1399 269.731 4.20521C269.727 4.27286 269.664 4.37782 269.578 4.39648C269.098 4.50612 268.598 4.69276 268.117 4.67643C266.667 4.62744 265.237 4.54344 263.81 4.82803C263.334 4.92367 262.763 4.85372 262.235 4.85138C258.273 4.84672 254.31 4.83504 250.347 4.83737C244.532 4.8397 238.721 4.85136 232.906 4.85602C230.925 4.85836 228.952 4.89104 226.978 5.05433C225.544 5.1733 224.082 5.18495 222.632 5.19195C212.327 5.24094 202.018 5.26661 191.713 5.31793C188.547 5.33426 185.386 5.35291 182.216 5.53953C179.074 5.72614 175.889 5.67949 172.724 5.68882C157.659 5.72381 142.594 5.73081 127.532 5.77046C121.19 5.78679 114.847 5.88011 108.505 5.89177C101.896 5.9011 95.2919 5.84045 88.6836 5.83345C79.4335 5.82412 70.1834 5.82644 60.9333 5.84743C59.2216 5.8521 57.5098 5.96174 55.7943 6.02706C54.4773 6.07604 53.1604 6.16003 51.8434 6.17869C48.8069 6.22301 45.7665 6.23001 42.7261 6.26733C41.2724 6.286 39.803 6.26034 38.3727 6.3863C34.9611 6.68956 31.526 6.70356 28.0948 6.76888C26.5121 6.7992 24.9371 6.90651 23.3544 6.98116C19.2745 7.17711 15.2376 7.60632 11.1421 7.72295C10.0908 7.75328 9.04749 7.90491 7.99625 7.93757C6.02274 8.00056 4.04134 8.04954 2.06392 8.0472C0.926712 8.0472 0.164667 7.51302 0.113863 6.80154C0.06306 6.09705 0.0317812 5.39022 0.000517605 4.68574C-0.0151142 4.33117 0.3249 4.06524 0.805577 3.93227C1.51682 3.73866 2.26713 3.55672 3.03309 3.48441C4.0726 3.38644 5.1395 3.40742 6.19465 3.35376C8.03529 3.26279 9.87589 3.16014 11.7165 3.05283C12.3731 3.01551 13.0257 2.9362 13.6822 2.90821C18.6883 2.69593 23.6788 2.38569 28.6614 2.04744C30.4942 1.92381 32.3544 1.94712 34.2029 1.91446C37.634 1.85614 41.073 1.89115 44.4808 1.55057C45.5164 1.44793 46.5872 1.47592 47.6463 1.45492C51.9997 1.37561 56.3531 1.36629 60.7066 1.11435C64.38 0.902076 68.1004 0.930059 71.7973 0.930059C85.5415 0.927727 99.2819 0.965063 113.026 0.972061C129.674 0.981392 146.326 0.983703 162.974 0.979037C168.39 0.976705 173.81 0.953401 179.227 0.916078C180.809 0.904414 182.388 0.811095 183.971 0.759775C184.627 0.73878 185.288 0.699114 185.944 0.720108C187.656 0.771428 189.368 0.90207 191.076 0.904403C192.647 0.906735 194.218 0.778424 195.789 0.717773C195.882 0.713108 196.082 0.818096 196.066 0.850755C196.015 0.979054 195.949 1.17734 195.804 1.20767C195.316 1.31031 194.792 1.39662 194.276 1.40828C192.694 1.44794 191.107 1.44092 189.52 1.47591C189.004 1.48757 188.477 1.54591 187.984 1.63688C187.84 1.66254 187.766 1.87248 187.723 2.00778C187.707 2.05443 187.867 2.16406 187.969 2.17806C188.477 2.24338 189.032 2.381 189.505 2.32035C191.728 2.04043 193.921 2.17574 196.105 2.33903ZM182.337 2.13142C182.24 2.08943 182.142 2.01244 182.044 2.01011C179.813 1.98445 177.582 1.96346 175.346 1.95646C174.846 1.95413 174.342 2.01012 173.795 2.04277C174.123 2.49999 174.725 2.39267 175.194 2.40666C176.268 2.43466 177.273 2.46966 177.964 3.09016C178.113 3.22313 178.742 3.28145 179.043 3.21147C180.141 2.95954 181.196 2.64229 182.255 2.33903C182.322 2.31804 182.31 2.2014 182.337 2.13142ZM160.672 2.06376C160.359 2.06376 160.101 2.05443 159.843 2.06843C159.726 2.07543 159.546 2.10575 159.511 2.15474C159.406 2.3017 159.57 2.38568 159.914 2.42067C160.297 2.458 160.672 2.52565 161.051 2.5653C161.379 2.60029 161.578 2.51632 161.571 2.34137C161.567 2.28072 161.457 2.19441 161.364 2.17108C161.121 2.11743 160.867 2.09175 160.672 2.06376Z" fill="url(#paint0_linear_355_823)"/>
+                <path d="M215.715 0.559176C219.013 0.559176 222.312 0.556845 225.61 0.561511C226.931 0.563844 228.26 0.552166 229.491 0.897409C229.682 0.951062 229.78 1.12835 229.921 1.24732C229.811 1.28931 229.702 1.36863 229.588 1.37096C227.349 1.40828 225.11 1.45961 222.867 1.46427C217.059 1.47594 211.256 1.47127 205.449 1.4596C204.671 1.45727 203.89 1.3803 203.112 1.32198C203.006 1.31498 202.819 1.21234 202.835 1.17735C202.885 1.03972 202.963 0.815775 203.108 0.792448C203.729 0.687476 204.378 0.587165 205.019 0.584832C208.583 0.566171 212.143 0.575492 215.707 0.575492C215.715 0.568494 215.715 0.563841 215.715 0.559176Z" fill="url(#paint1_linear_355_823)"/>
+                <path d="M282.389 4.11657C282.592 4.20055 282.877 4.25886 282.971 4.37317C283.065 4.48747 283.049 4.69509 282.924 4.7954C282.514 5.12898 281.916 5.22229 281.236 5.05667C281.072 5.01701 280.888 4.79305 280.935 4.69041C281.126 4.28918 281.673 4.09558 282.389 4.11657Z" fill="url(#paint2_linear_355_823)"/>
+                <path d="M290.201 4.73474C289.907 4.69975 289.532 4.67174 289.181 4.60409C288.895 4.54811 288.817 4.40349 288.966 4.26586C289.02 4.21454 289.177 4.17022 289.278 4.17488C289.65 4.19121 290.025 4.21921 290.388 4.26353C290.978 4.33584 291.326 4.5621 290.994 4.62742C290.763 4.67407 290.517 4.69275 290.201 4.73474Z" fill="url(#paint3_linear_355_823)"/>
+                <path d="M235.759 0.79009C236.13 0.769096 236.462 0.713098 236.767 0.748088C236.896 0.762085 237.103 1.00236 237.045 1.07001C236.853 1.28928 236.462 1.31262 236.134 1.19598C235.974 1.13766 235.919 0.972043 235.759 0.79009Z" fill="url(#paint4_linear_355_823)"/>
+                <path d="M276.789 4.79073C276.652 4.66709 276.456 4.5551 276.398 4.41981C276.347 4.30317 276.378 4.12821 276.499 4.03957C276.702 3.89028 277.316 3.96026 277.453 4.15621C277.531 4.26351 277.488 4.4478 277.371 4.54111C277.238 4.64842 276.964 4.6974 276.753 4.76971L276.789 4.79073Z" fill="url(#paint5_linear_355_823)"/>
+                <path d="M211.678 2.29237C211.858 2.14774 212.085 2.11277 212.304 2.2224C212.374 2.25739 212.417 2.37402 212.37 2.41834C212.214 2.57464 211.975 2.60265 211.756 2.49301C211.686 2.45802 211.702 2.36002 211.678 2.29237Z" fill="url(#paint6_linear_355_823)"/>
+                <path d="M282.408 1.3686C282.291 1.35694 282.103 1.36629 282.064 1.32663C281.912 1.16567 282.045 1.07702 282.4 1.11434C282.502 1.12367 282.584 1.196 282.674 1.23799C282.584 1.27997 282.498 1.32428 282.408 1.3686Z" fill="url(#paint7_linear_355_823)"/>
+                <path d="M263.763 1.28464L263.517 1.23332L263.716 1.15399L263.763 1.28464Z" fill="url(#paint8_linear_355_823)"/>
+                <path d="M286.668 1.32895L286.527 1.19599L286.812 1.19833L286.668 1.32895Z" fill="url(#paint9_linear_355_823)"/>
+                <path d="M224.684 2.16641L224.938 2.11974L224.903 2.24572L224.684 2.16641Z" fill="url(#paint10_linear_355_823)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint3_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint4_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint5_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint6_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint7_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint8_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint9_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                  <linearGradient id="paint10_linear_355_823" x1="0" y1="4.30294" x2="291.123" y2="4.30294" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04ACEB"/>
+                    <stop offset="1" stop-color="#5E44E6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+        </div>
+
+
+
         <!-- image Card -->
         <div class="">
+            <!-- 1st card -->
             <div class="bg-white p-3 flex gap-2 items-center rotate-[-48deg] justify-center rounded-md">
                 <div>
                     <img class="w-[76px] h-[76px] rotate-[53deg]" src="./images/Image.png" alt="">
@@ -165,6 +232,69 @@
             </div>
 
         </div>
+
+    </section>
+
+    <!------------------- What we do Section  ---------------->
+
+    <section class="">
+
+        <!-- Heading  -->
+        <div class="items-center justify-center text-center mt-11">
+            <h2 class="text-5xl font-bold text-white">
+                What We Do
+            </h2>
+            <p class="mt-6 text-white text-md">Explore our diverse range of creative projects.</p>
+
+        </div>
+
+        <!-- Card Part-1 -->
+        <div class="flex mt-20 gap-9">
+            <!-- 1st card -->
+            <div class="bg-gray-900 h-[277px] w-[416px] rounded-lg border border-white p-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22C13.9836 22 22 13.9836 22 0C22 13.9836 30.0164 22 44 22C30.0164 22 22 30.0164 22 44C22 30.0164 13.9836 22 0 22Z" fill="#5E44E6"/>
+                  </svg>
+                <h3 class="mt-16 text-lg font-bold text-white">Brand Monitoring & Growth</h3>
+                <p class="mt-4 text-base text-white">Lorem ipsum dolor sit ametconsectetur. Diam libero vel etia</p>
+            </div>
+
+            <!-- 2nd card -->
+            <div class="bg-gray-900 h-[277px] w-[416px] rounded-lg border border-white p-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22C13.9836 22 22 13.9836 22 0C22 13.9836 30.0164 22 44 22C30.0164 22 22 30.0164 22 44C22 30.0164 13.9836 22 0 22Z" fill="#5E44E6"/>
+                  </svg>
+                <h3 class="mt-16 text-lg font-bold text-white">Brand Monitoring & Growth</h3>
+                <p class="mt-4 text-base text-white">Lorem ipsum dolor sit ametconsectetur. Diam libero vel etia</p>
+            </div>
+
+        </div>
+        <!-- Card Part-2 -->
+        <div class="flex justify-end mt-12 gap-9">
+            <!-- 1st card -->
+            <div class="bg-gray-900 h-[277px] w-[416px] rounded-lg border border-white p-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22C13.9836 22 22 13.9836 22 0C22 13.9836 30.0164 22 44 22C30.0164 22 22 30.0164 22 44C22 30.0164 13.9836 22 0 22Z" fill="#5E44E6"/>
+                  </svg>
+                <h3 class="mt-16 text-lg font-bold text-white">Brand Monitoring & Growth</h3>
+                <p class="mt-4 text-base text-white">Lorem ipsum dolor sit ametconsectetur. Diam libero vel etia</p>
+            </div>
+
+            <!-- 2nd card -->
+            <div class="bg-gray-900 h-[277px] w-[416px] rounded-lg border border-white p-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22C13.9836 22 22 13.9836 22 0C22 13.9836 30.0164 22 44 22C30.0164 22 22 30.0164 22 44C22 30.0164 13.9836 22 0 22Z" fill="#5E44E6"/>
+                  </svg>
+                <h3 class="mt-16 text-lg font-bold text-white">Brand Monitoring & Growth</h3>
+                <p class="mt-4 text-base text-white">Lorem ipsum dolor sit ametconsectetur. Diam libero vel etia</p>
+            </div>
+
+        </div>
+
+
+
+
+
 
     </section>
 
